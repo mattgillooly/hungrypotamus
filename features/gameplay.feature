@@ -1,7 +1,7 @@
 Feature: Playing a game
   In order to have a fun time with friends
   As an online user
-  I want to play a game a hungrypotamus
+  I want to play a game of hungrypotamus
 
   Scenario: Set up a game
     Given my marble collecting area is empty
