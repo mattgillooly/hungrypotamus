@@ -6,8 +6,16 @@ Given /^my marble collecting area is empty$/ do
   @player.empty_marble_collecting_area!
 end
 
+When /^there is a game that is accepting new players$/ do
+  @game = Game.new
+end
+
 When /^I join a game$/ do
-    pending # express the regexp above with the code you wish you had
+  steps %{
+    When there is a game that is accepting new players
+  }
+
+  @player.join_game(@game)
 end
 
 Then /^I choose an available hippo$/ do
