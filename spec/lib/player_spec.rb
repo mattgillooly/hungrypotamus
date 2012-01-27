@@ -30,5 +30,13 @@ describe Player do
     its(:hippo) { should == hippo }
   end
 
+  context "after adding marbles to the release area" do
+    before do
+      subject.add_marbles_to_release_area(5)
+    end
+
+    its(:releaseable_marble_count) { should == 5 }
+  end
+
 end
 

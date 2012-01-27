@@ -1,6 +1,6 @@
 class Player
 
-  attr_reader :collected_marble_count, :current_game, :hippo
+  attr_reader :collected_marble_count, :current_game, :hippo, :releaseable_marble_count
 
   def empty_marble_collecting_area!
     @collected_marble_count = 0
@@ -12,6 +12,11 @@ class Player
 
   def choose_hippo(hippo)
     @hippo = hippo
+  end
+
+  def add_marbles_to_release_area(num_marbles)
+    @releaseable_marble_count ||= 0
+    @releaseable_marble_count += num_marbles
   end
 
 end

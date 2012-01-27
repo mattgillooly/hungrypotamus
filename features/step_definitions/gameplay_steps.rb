@@ -22,8 +22,8 @@ Then /^I choose an available hippo$/ do
   @player.choose_hippo(@game.available_hippos.first)
 end
 
-Then /^I place (\d+) marbles into my marble release area$/ do |arg1|
-    pending # express the regexp above with the code you wish you had
+Then /^I place (\d+) marbles into my marble release area$/ do |num_marbles|
+  @player.add_marbles_to_release_area(num_marbles.to_i)
 end
 
 Then /^I wait for the game to begin$/ do
