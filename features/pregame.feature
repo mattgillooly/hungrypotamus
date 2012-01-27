@@ -6,15 +6,20 @@ Feature: Setting up a game
   Background:
     Given I am signed in
 
-  Scenario: Set up a game
-    Given my marble collecting area is empty
+  Scenario: Join a game
     When I join a game
-    Then I choose an available hippo
-    And I place 5 marbles into my marble release area
-    And I wait for the game to begin
+    Then I can choose an available hippo
 
-  Scenario: Begin a game
-    When everyone in the game has chosen a hippo
-    And they have all loaded their marble release areas
-    Then the youngest player launches one marble
+  Scenario: Choose a hippo
+    Given I join a game
+    When I choose an available hippo
+    Then my marble collecting area is empty
+    And I have 5 marbles in my marble release area
+    And I can't choose another hippo
+
+  Scenario: Wait for start of gameplay
+    Given I join a game
+    When three other players have joined the game
+    And everyone in the game has chosen a hippo
+    Then it is the youngest players turn to launch a marble
 

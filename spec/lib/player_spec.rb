@@ -2,6 +2,10 @@ require 'hungrypotamus'
 
 describe Player do
 
+  subject { Player.new(27) }
+
+  its(:age) { should == 27 }
+
   context "after emptying marble collecting area" do
     before do
       subject.empty_marble_collecting_area!
@@ -11,28 +15,34 @@ describe Player do
   end
 
   context "after joining a game" do
-    let(:game) { stub(:game) }
+    let(:game) { stub(:game).as_null_object }
 
     before do
       subject.join_game(game)
     end
 
     its(:current_game) { should == game }
-  end
+    its(:releaseable_marble_count) { should == 5 }
+    its(:collected_marble_count) { should be_zero }
 
-  context "after choosing a hippo" do
-    let(:hippo) { stub(:hippo) }
+    context "after choosing a hippo" do
+      let(:hippo) { stub(:hippo) }
 
-    before do
-      subject.choose_hippo(hippo)
+      before do
+        game.stub(:claim_hippo).
+          with(hippo, subject).
+          and_return(hippo)
+
+        subject.choose_hippo(hippo)
+      end
+
+      its(:hippo) { should == hippo }
     end
-
-    its(:hippo) { should == hippo }
   end
 
   context "after adding marbles to the release area" do
     before do
-      subject.add_marbles_to_release_area(5)
+      subject.load_marble_release_area!
     end
 
     its(:releaseable_marble_count) { should == 5 }
