@@ -1,19 +1,3 @@
-Then /^I wait for the game to begin$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-When /^everyone in the game has chosen a hippo$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-When /^they have all loaded their marble release areas$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-Then /^the youngest player launches one marble$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
 Given /^I am in an active game$/ do
     pending # express the regexp above with the code you wish you had
 end
@@ -87,33 +71,5 @@ Given /^I have eaten two fewer marbles than an opponent$/ do
 end
 
 Then /^all players are notified that my opponent has won the game$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-Given /^I was in a game that has ended$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-When /^I dismiss the notification of who has won the game$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-Then /^I am asked if I would like to play again$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-When /^I say I would like to play again$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-Then /^I am redirected to the pre\-game waiting area$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-When /^I say I would not like to play again$/ do
-    pending # express the regexp above with the code you wish you had
-end
-
-Then /^I am redirected to buy Hungry Hunry Hippos on Amazon\.com using Matt Gillooly's affiliate code$/ do
     pending # express the regexp above with the code you wish you had
 end
