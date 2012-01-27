@@ -2,6 +2,6 @@ require 'hungrypotamus'
 
 describe Game do
 
-  it { should be_true }
+  its(:available_hippos) { should have(4).items }
 
 end

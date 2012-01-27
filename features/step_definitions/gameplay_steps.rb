@@ -19,7 +19,7 @@ When /^I join a game$/ do
 end
 
 Then /^I choose an available hippo$/ do
-    pending # express the regexp above with the code you wish you had
+  @player.choose_hippo(@game.available_hippos.first)
 end
 
 Then /^I place (\d+) marbles into my marble release area$/ do |arg1|

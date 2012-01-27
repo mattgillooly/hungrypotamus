@@ -20,5 +20,15 @@ describe Player do
     its(:current_game) { should == game }
   end
 
+  context "after choosing a hippo" do
+    let(:hippo) { stub(:hippo) }
+
+    before do
+      subject.choose_hippo(hippo)
+    end
+
+    its(:hippo) { should == hippo }
+  end
+
 end
 
