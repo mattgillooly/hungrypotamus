@@ -3,6 +3,9 @@ Feature: Playing a game
   As an online user
   I want to play a game of hungrypotamus
 
+  Background:
+    Given I am signed in
+
   Scenario: Set up a game
     Given my marble collecting area is empty
     When I join a game

@@ -1,3 +1,4 @@
+@wip
 Feature: Lobby
   In order to join a game
   As an online user

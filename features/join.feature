@@ -1,3 +1,4 @@
+@wip
 Feature: Joining the service
   In order to play games
   As some deranged person on the internet
