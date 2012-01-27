@@ -2,7 +2,13 @@ require 'hungrypotamus'
 
 describe Player do
 
-  it { should be_true }
+  context "after emptying marble collecting area" do
+    before do
+      subject.empty_marble_collecting_area!
+    end
+
+    its(:collected_marble_count) { should be_zero }
+  end
 
 end
 

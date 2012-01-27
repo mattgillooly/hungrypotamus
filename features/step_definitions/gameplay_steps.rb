@@ -3,7 +3,7 @@ Given /^I am signed in$/ do
 end
 
 Given /^my marble collecting area is empty$/ do
-    pending # express the regexp above with the code you wish you had
+  @player.empty_marble_collecting_area!
 end
 
 When /^I join a game$/ do
