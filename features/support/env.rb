@@ -1,1 +1,2 @@
-require './hungrypotamus'
+require 'cucumber/rails'
+

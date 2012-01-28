@@ -1,3 +1,4 @@
+@wip
 Feature: Playing a game
   In order to have a fun time with friends
   As player in an active game

@@ -1,5 +1,3 @@
-require './hungrypotamus'
-
 describe Player do
 
   subject { Player.new(27) }

@@ -1,3 +1,4 @@
+@wip
 Feature: Endgame
   In order to carry on with my life
   As player in a game that has just ended
