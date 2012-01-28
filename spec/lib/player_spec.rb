@@ -1,4 +1,4 @@
-require 'hungrypotamus'
+require './hungrypotamus'
 
 describe Player do
 

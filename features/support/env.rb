@@ -1,1 +1,1 @@
-require 'hungrypotamus'
+require './hungrypotamus'
