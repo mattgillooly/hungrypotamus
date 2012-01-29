@@ -25,6 +25,8 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
   </head>
 
   <body>
@@ -113,6 +115,29 @@
       var channel = pusher.subscribe('test_channel');
       channel.bind('greet', function(data) {
         alert(data.greeting);
+      });
+    </script>
+
+    <script src="http://api.jquery.com/scripts/events.js"></script>
+    <script>
+      function gloat() {
+        $.post('/gloats');
+      }
+
+      function bite() {
+        $.post('/bites');
+      }
+      
+      $("body").keypress(function(event) {
+        if ( event.which == 13 ) {
+          event.preventDefault();
+        }
+        else if ( event.which == 103 ) {
+          gloat();
+        }
+        else if ( event.which == 32 ) {
+          bite();
+        }
       });
     </script>
 
