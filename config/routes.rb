@@ -14,6 +14,7 @@ Hungrypotamus::Application.routes.draw do
   #   resources :products
 
   resources :bites, :only => [:create]
+  resources :gloats, :only => [:create]
 
   # Sample resource route with options:
   #   resources :products do
