@@ -9,6 +9,8 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+APP_CONFIG = { :current_js_version => '1.10' }
+
 module Hungrypotamus
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
