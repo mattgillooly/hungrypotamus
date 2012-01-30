@@ -9,7 +9,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-APP_CONFIG = { :current_js_version => '1.11' }
+APP_CONFIG = { :current_js_version => '1.10' }
 
 module Hungrypotamus
   class Application < Rails::Application
