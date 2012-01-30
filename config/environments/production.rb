@@ -1,9 +1,5 @@
 require 'pusher'
 
-Pusher.app_id = 14454
-Pusher.key = 'cbb771389f68f8c7ecf0'
-Pusher.secret = 'c6c42e7ddbee4eaf432b'
-
 Hungrypotamus::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
