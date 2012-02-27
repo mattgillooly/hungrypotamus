@@ -20,7 +20,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="span12">
+  <div class="span8">
     <% if @online %>
       <div id="video">
         Live Game Video
@@ -37,15 +37,16 @@
       </div>
     <% end %>
   </div>
-</div>
 
-<div class="row">
-  <div class="span3 player sweetie"><span class="name">Player 1</span></div>
-  <div class="span3 player bottomless"><span class="name">Player 2 </span><% if @playing %><p><strong>This is you!</strong></p><% end %></div>
-  <div class="span3 player picky"><span class="name">Player 3</span></div>
-  <div class="span3 player veggie"><span class="name">Player 4</span></div>
+  <div class="span4">
+    <div class="player sweetie"><span class="name">Player 1</span></div>
+    <div class="player bottomless"><span class="name">Player 2 </span><% if @playing %><p><strong>This is you!</strong></p><% end %></div>
+    <div class="player picky"><span class="name">Player 3</span></div>
+    <div class="player veggie"><span class="name">Player 4</span></div>
+  </div>
 </div>
 
 <div id="chat">
   chat/realtime events
 </div>
+
