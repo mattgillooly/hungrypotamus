@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="span12">
+    <% if @full %>
+      <div class="alert alert-info">
+        <strong>This game is full!</strong> Please wait, and we will notify you when a hippo has been freed up.
+      </div>
+    <% end %>
+
+    <% if @free_hippo %>
+      <div class="alert alert-success">
+        <strong>A hippo has freed up!</strong> Be the first to claim it and join the current game!
+      </div>
+    <% end %>
+
+    <% if @alone %>
+      <div class="alert alert-info">
+        <strong>No one else is here!</strong> Invite your friends to come play!
+      </div>
+    <% end %>
+  </div>
+</div>
+<div class="row">
+  <div class="span12">
+    <% if @online %>
+      <div id="video">
+        Live Game Video
+      </div>
+    <% else %>
+      <div id="video" class="hero-unit">
+        <h1>Hungrypotamus is currently offline</h1>
+        <p>Sign up for spam</p>
+        <p>
+          <a class="btn btn-primary btn-large">
+            Learn more
+          </a>
+        </p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span3 player sweetie"><span class="name">Player 1</span></div>
+  <div class="span3 player bottomless"><span class="name">Player 2 </span><% if @playing %><p><strong>This is you!</strong></p><% end %></div>
+  <div class="span3 player picky"><span class="name">Player 3</span></div>
+  <div class="span3 player veggie"><span class="name">Player 4</span></div>
+</div>
+
+<div id="chat">
+  chat/realtime events
+</div>

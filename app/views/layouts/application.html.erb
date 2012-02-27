@@ -11,15 +11,6 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le styles -->
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
-    <style type="text/css">
-        body {
-          padding-top: 60px;
-          background-image: url(images/white_paperboard.png);
-        }
-    </style>
-
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -33,15 +24,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="topbar">
-    <div class="fill">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
       <div class="container">
         <a class="brand" href="#">Hungrypotamus</a>
-        <form action="http://hungrypotamus.com/bites" class="pull-right">
-          <input class="input-small" type="text" placeholder="Username">
-          <input class="input-small" type="password" placeholder="Password">
-          <button class="btn" type="submit">Sign in</button>
-        </form>
       </div>
     </div>
   </div>
@@ -50,7 +36,6 @@
     <%= yield %>
 
     <footer>
-      <p>&copy; a Hungrypotamus joint, 2012</p>
     </footer>
   </div> <!-- /container -->
 
