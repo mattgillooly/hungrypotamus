@@ -28,6 +28,7 @@
     <div class="navbar-inner">
       <div class="container">
         <a class="brand" href="#">Hungrypotamus</a>
+        <a class="navbar-text pull-right" data-toggle="modal" href="#wtf">What is this?</a>
       </div>
     </div>
   </div>
@@ -38,6 +39,19 @@
     <footer>
     </footer>
   </div> <!-- /container -->
+
+  <div class="modal hide" id="wtf">
+    <div class="modal-header">
+      <a class="close" data-dismiss="modal">×</a>
+      <h3>About Hungrypotamus</h3>
+    </div>
+    <div class="modal-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.</p>
+    </div>
+    <div class="modal-footer">
+      <a class="btn" data-dismiss="modal">Cool, thanks.</a>
+    </div>
+  </div>
 
   <script src="http://js.pusherapp.com/<%= APP_CONFIG[:current_js_version] %>/pusher.min.js" type="text/javascript"></script>
   <script type="text/javascript">
