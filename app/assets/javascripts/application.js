@@ -14,3 +14,24 @@
 //= require jquery_ujs
 //= require twitter/bootstrap/modal.js
 //= require_tree .
+
+
+function gloat() {
+  $.post('/gloats');
+}
+
+function bite() {
+  $.post('/bites');
+}
+
+$("body").keypress(function(event) {
+  if ( event.which == 13 ) {
+    event.preventDefault();
+  }
+  else if ( event.which == 103 ) {
+    gloat();
+  }
+  else if ( event.which == 32 ) {
+    bite();
+  }
+});

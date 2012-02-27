@@ -56,27 +56,5 @@
 
 <% content_for :extra_js do %>
   <script type="text/javascript" src="https://bellbot.com/js/?code=404737513"></script>
-
   <script src="http://api.jquery.com/scripts/events.js"></script>
-  <script>
-    function gloat() {
-      $.post('/gloats');
-    }
-
-    function bite() {
-      $.post('/bites');
-    }
-    
-    $("body").keypress(function(event) {
-      if ( event.which == 13 ) {
-        event.preventDefault();
-      }
-      else if ( event.which == 103 ) {
-        gloat();
-      }
-      else if ( event.which == 32 ) {
-        bite();
-      }
-    });
-  </script>
 <% end %>
