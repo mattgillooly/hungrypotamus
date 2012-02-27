@@ -48,4 +48,5 @@ group :development, :test do
   gem 'cucumber-rails'
   gem "rspec"
   gem 'rspec-rails'
+  gem 'sqlite3'
 end
