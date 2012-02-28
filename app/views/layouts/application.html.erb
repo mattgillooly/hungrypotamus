@@ -53,6 +53,21 @@
     </div>
   </div>
 
+  <div class="modal hide" id="who-are-you">
+    <div class="modal-header">
+      <a class="close" data-dismiss="modal">×</a>
+      <h3>Hello, friend.</h3>
+    </div>
+    <div class="modal-body">
+      <label for="player_name">What's your name?</label>
+      <input class="xlarge" id="player_name" name="player_name" size="30" type="text" />
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" data-dismiss="modal">Nice to meet you.</a>
+      <a class="btn" data-dismiss="modal">Nevermind.  Stranger danger.</a>
+    </div>
+  </div>
+
   <script src="http://js.pusherapp.com/<%= APP_CONFIG[:current_js_version] %>/pusher.min.js" type="text/javascript"></script>
   <script type="text/javascript">
     var pusher = new Pusher('<%= Pusher.key %>');
