@@ -39,16 +39,7 @@
   </div>
 
   <div class="span4">
-    <div class="player sweetie"><div class="name">Player 1</div></div>
-    <div class="player bottomless">
-      <div class="name">Player 2 
-      <% if @playing %>
-        <span class="label label-info">This is you!</span>
-      <% end %>
-      </div>
-    </div>
-    <div class="player picky"><div class="name">Player 3</div></div>
-    <div class="player veggie"><div class="name">Player 4</div></div>
+    <%= render @players %>
   </div>
 </div>
 
