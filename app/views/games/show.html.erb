@@ -39,10 +39,16 @@
   </div>
 
   <div class="span4">
-    <div class="player sweetie"><span class="name">Player 1</span></div>
-    <div class="player bottomless"><span class="name">Player 2 </span><% if @playing %><p><strong>This is you!</strong></p><% end %></div>
-    <div class="player picky"><span class="name">Player 3</span></div>
-    <div class="player veggie"><span class="name">Player 4</span></div>
+    <div class="player sweetie"><div class="name">Player 1</div></div>
+    <div class="player bottomless">
+      <div class="name">Player 2 
+      <% if @playing %>
+        <span class="label label-info">This is you!</span>
+      <% end %>
+      </div>
+    </div>
+    <div class="player picky"><div class="name">Player 3</div></div>
+    <div class="player veggie"><div class="name">Player 4</div></div>
   </div>
 </div>
 
