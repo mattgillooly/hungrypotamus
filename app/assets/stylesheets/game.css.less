@@ -1,5 +1,24 @@
 @import "twitter/bootstrap";
 
+@gradient_difference: #110;
+@border_difference: #221;
+
+@pink: #f2b5c4;
+@gradient_pink: @pink - @gradient_difference;
+@border_pink: @pink - @border_difference;
+
+@yellow: #efde44;
+@gradient_yellow: @yellow - @gradient_difference;
+@border_yellow: @yellow - @border_difference;
+
+@orange: #efaf43;
+@gradient_orange: @orange - @gradient_difference;
+@border_orange: @orange - @border_difference;
+
+@green: #a2dc8f;
+@gradient_green: @green - @gradient_difference;
+@border_green: @green - @border_difference;
+
 body {
   padding-top: 60px;
 }
@@ -24,28 +43,47 @@ body {
 .player {
   background-color: #cc9;
   height: 45px;
-  padding: 20px;
+  padding: 19px;
   margin-bottom: 20px;
+  .border-radius(4px);
+}
+
+.available_hippo p {
+  margin-bottom: 0px;
 }
 
 .player .name {
   padding-bottom: 10px;
-  font-size: 16pt;
+  font-size: 20pt;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.offline {
+  color: #666;
 }
 
 .sweetie {
-  background-color: pink;
+  #gradient > .vertical(@pink, @gradient_pink);
+  border: 1px solid @border_pink;
+  .box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.7));
 }
 
 .bottomless {
-  background-color: yellow;
+  #gradient > .vertical(@yellow, @gradient_yellow);
+  border: 1px solid @border_yellow;
+  .box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.8));
 }
 
 .picky {
-  background-color: orange;
+  #gradient > .vertical(@orange, @gradient_orange);
+  border: 1px solid @border_orange;
+  .box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.5));
 }
 
 .veggie {
-  background-color: green;
+  #gradient > .vertical(@green, @gradient_green);
+  border: 1px solid @border_green;
+  .box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.4));
 }
 

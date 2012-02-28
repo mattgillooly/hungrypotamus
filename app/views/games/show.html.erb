@@ -6,12 +6,6 @@
       </div>
     <% end %>
 
-    <% if @free_hippo %>
-      <div class="alert alert-success">
-        <strong>A hippo has freed up!</strong> Be the first to claim it and join the current game!
-      </div>
-    <% end %>
-
     <% if @alone %>
       <div class="alert alert-info">
         <strong>No one else is here!</strong> Invite your friends to come play!
@@ -44,6 +38,25 @@
 </div>
 
 <div id="chat">
-  chat/realtime events
+  <table class="table table-striped" id="chat_events">
+    <%= render @chat_events %>
+
+    <% if @free_hippo %>
+      <tr>
+        <td colspan="2">
+      <div class="alert alert-success">
+        <strong>A hippo has freed up!</strong> Be the first to claim it and join the current game!
+      </div>
+    </td>
+  </tr>
+    <% end %>
+
+  </table>
+
+  <form>
+    <input type="text" value="Say something" />
+    <button type="submit" class="btn">Submit</button>
+  </form>
+
 </div>
 
