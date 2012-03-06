@@ -73,7 +73,7 @@ class GamesController < ApplicationController
    
     @players = players_for_state(state) 
 
-    @chat_events = ChatEvent.most_recent
+    @chat_events = [] #ChatEvent.most_recent
   end
 
 private
