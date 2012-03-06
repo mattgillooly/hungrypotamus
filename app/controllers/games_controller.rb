@@ -55,6 +55,8 @@ class GamesController < ApplicationController
       @video = VideoOffline.new
     end
 
+    @current_user_has_hippo = [:full, :playing].include?(state)
+
     #- game is empty
     #  - choose a hippo and start playing
     #  - invite friends
@@ -115,7 +117,7 @@ private
       [
         Player.new('sweetie', 'Judy'),
         Player.new('bottomless', 'Matt', false, true),
-        Player.new('picky', 'Steve'),
+        AvailableHippo.new('picky'),
         AvailableHippo.new('veggie')
       ]
     end
