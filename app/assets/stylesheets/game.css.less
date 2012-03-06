@@ -19,6 +19,19 @@
 @gradient_green: @green - @gradient_difference;
 @border_green: @green - @border_difference;
 
+@topbar: #ff2816 - #222;
+@gradient_topbar: @topbar - @gradient_difference;
+
+@light_gameboard_blue: #ECFFFF;
+
+.navbar-inner {
+  #gradient > .vertical(@topbar, @gradient_topbar);
+}
+
+.navbar .nav li a {
+  color: white;
+}
+
 body {
   padding-top: 60px;
   background-color: white;
