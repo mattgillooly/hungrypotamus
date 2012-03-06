@@ -37,6 +37,7 @@ class GamesController < ApplicationController
   end
 
   def index
+    redirect_to game_path('offline')
   end
 
   def show
