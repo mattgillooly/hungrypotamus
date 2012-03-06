@@ -79,13 +79,14 @@ class GamesController < ApplicationController
    
     @players = players_for_state(state) 
 
-    @chat_events = [
-      ChatEvent.new('Matt', "Who's ready to get their ass kicked?"),
-      ChatEvent.new('Steve', "Bring it on!"),
-      ChatEvent.new('Carol', "Ha! You wish!"),
-      ChatEvent.new('Judy', "You guys suck"),
-      ChatEvent.new('Steve', "Judy, you're mean.")
-    ]
+    @chat_events = []
+
+      #ChatEvent.new('Matt', "Who's ready to get their ass kicked?"),
+      #ChatEvent.new('Steve', "Bring it on!"),
+      #ChatEvent.new('Carol', "Ha! You wish!"),
+      #ChatEvent.new('Judy', "You guys suck"),
+      #ChatEvent.new('Steve', "Judy, you're mean.")
+    #]
   end
 
 private
