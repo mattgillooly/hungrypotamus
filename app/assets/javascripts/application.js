@@ -24,14 +24,30 @@ function bite() {
   $.post('/bites');
 }
 
-$("body").keypress(function(event) {
-  if ( event.which == 13 ) {
-    event.preventDefault();
-  }
-  else if ( event.which == 103 ) {
-    gloat();
-  }
-  else if ( event.which == 32 ) {
-    bite();
-  }
+$(document).ready(function(){
+  $("body").keypress(function(event) {
+    if ( event.which == 13 ) {
+      event.preventDefault();
+    }
+    else if ( event.which == 103 ) {
+      gloat();
+    }
+    else if ( event.which == 32 ) {
+      bite();
+    }
+  });
+
+  $("#chat-input form").submit(function() { 
+    $form = $(this);
+    $.post($form.attr("action"), 
+           $form.serialize());
+
+    var chat_input = $('input#message');
+    var message = chat_input.val();
+    chat_input.val('').focus();
+
+    $('#chat_events').append('<tr><th>you</th><td>' + message + '</td></tr>');
+
+    return false;
+  });
 });

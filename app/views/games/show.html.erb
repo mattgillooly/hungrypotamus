@@ -40,12 +40,12 @@
   </table>
 
   <div id="chat-input">
-    <form>
-      <input type="text" placeholder="Say something&hellip;" class="input-large" />
+    <%= form_tag(chat_events_path) do %>
+      <input type="text" id="message" name="message" placeholder="Say something&hellip;" class="input-large" />
       <button type="submit" class="btn">
         <i class=" icon-comment"></i> Submit
       </button>
-    </form>
+    <% end %>
   </div>
 
 </div>
