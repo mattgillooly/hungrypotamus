@@ -92,9 +92,36 @@ body {
 }
 
 #chat {
+  background-color: white;
   border: 1px solid black;
   height: 280px;
   width: 100%;
+  position: relative;
+}
+
+#chat-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  #gradient > .vertical(#006, #336);
+  width: 100%;
+}
+
+#chat-input form {
+  margin-bottom: 0px;
+}
+
+#chat-input input {
+  margin: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 810px;
+}
+
+#chat-input button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
 }
 
 .player {
