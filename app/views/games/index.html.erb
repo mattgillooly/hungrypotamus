@@ -23,34 +23,7 @@
     </ul>
   </div>
   <div class="span5">
-    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-    <script>
-      new TWTR.Widget({
-        version: 2,
-        type: 'profile',
-        rpp: 4,
-        interval: 30000,
-        width: 250,
-        height: 300,
-        theme: {
-          shell: {
-            background: '#ffffff',
-            color: '#000000'
-          },
-          tweets: {
-            background: '#ffffff',
-            color: '#000000',
-            links: '#000099'
-          }
-        },
-        features: {
-          scrollbar: false,
-          loop: false,
-          live: false,
-          behavior: 'all'
-        }
-      }).render().setUser('hungrypotamus').start();
-    </script>
+    <%= render '/press_mentions/twitter' %>
   </div>
 </div>
 

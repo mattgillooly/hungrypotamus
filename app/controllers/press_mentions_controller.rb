@@ -1,0 +1,3 @@
+class PressMentionsController < ApplicationController
+
+end
