@@ -15,21 +15,7 @@
 </div>
 <div class="row">
   <div class="span8">
-    <% if @online %>
-      <div id="video">
-        Live Game Video
-      </div>
-    <% else %>
-      <div id="video" class="hero-unit">
-        <h1>Hungrypotamus is currently offline</h1>
-        <p>Sign up for spam</p>
-        <p>
-          <a class="btn btn-primary btn-large">
-            Learn more
-          </a>
-        </p>
-      </div>
-    <% end %>
+    <%= render @video %>
   </div>
 
   <div class="span4">
@@ -53,10 +39,14 @@
 
   </table>
 
-  <form>
-    <input type="text" value="Say something" />
-    <button type="submit" class="btn">Submit</button>
-  </form>
+  <div id="chat-input">
+    <form>
+      <input type="text" placeholder="Say something&hellip;" class="input-large" />
+      <button type="submit" class="btn">
+        <i class=" icon-comment"></i> Submit
+      </button>
+    </form>
+  </div>
 
 </div>
 
