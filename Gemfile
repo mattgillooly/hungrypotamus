@@ -45,9 +45,10 @@ gem 'jquery-rails'
 
 gem 'pusher'
 
+gem "cucumber"
+gem 'cucumber-rails'
+
 group :development, :test do
-  gem "cucumber"
-  gem 'cucumber-rails'
   gem "rspec"
   gem 'rspec-rails'
   gem 'sqlite3'
