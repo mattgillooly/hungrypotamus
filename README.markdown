@@ -1,8 +1,9 @@
 Hungrypotamus
 =============
 
-A social network for hippos with eating disorders.
+[![Build Status](https://secure.travis-ci.org/mattgillooly/hungrypotamus.png)](http://travis-ci.org/mattgillooly/hungrypotamus)
 
+A social network for hippos with eating disorders.
 
 ![I just lose it](http://www.blog.hippomojo.com/wp-content/uploads/2008/12/hungryhungryhipposcartoon.jpg)
 
