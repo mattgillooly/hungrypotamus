@@ -5,8 +5,6 @@ require 'cucumber'
 require 'cucumber/rake/task'
 require 'rspec/core/rake_task'
 
-RSpec::Core::RakeTask.new('spec')
-
 require File.expand_path('../config/application', __FILE__)
 
 Hungrypotamus::Application.load_tasks
